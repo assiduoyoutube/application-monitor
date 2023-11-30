@@ -14,7 +14,7 @@ def get_process_info(filename):
     """Continuously gets hardware usage information for specified applications and saves it to a file."""
     run_number = 1
 
-    while run_number <= how_Many_runs:
+    while run_number <= how_many_runs:
         with open(filename, 'w' if run_number == 1 else 'a') as file:
             file.write(f"Run #{run_number}\n")
             file.write("Process CPU_Usage RAM_Usage GPU_Usage\n")
